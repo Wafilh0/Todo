@@ -24,7 +24,7 @@ public class Todo {
 	private Long id;
 	
 	@Column
-	private String descripition;
+	private String description;
 	
 	@Column
 	private Boolean done;
