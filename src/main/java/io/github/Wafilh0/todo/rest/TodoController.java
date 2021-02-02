@@ -40,7 +40,7 @@ public class TodoController {
 		return repository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
 	}
 	
-	@DeleteMapping({"id"})
+	@DeleteMapping("{id}")
 	public void delete(@PathVariable Long id) {
 		repository.deleteById(id);
 	}
