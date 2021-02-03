@@ -21,7 +21,7 @@ import io.github.Wafilh0.todo.repository.TodoRepository;
 
 @RestController
 @RequestMapping("/api/todos")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 public class TodoController {
 
 	@Autowired
