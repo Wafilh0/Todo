@@ -34,6 +34,7 @@ public class Todo {
 	private LocalDateTime createdDate;
 	
 	@Column
+	@JsonFormat(pattern = "dd/MM/yyyy HH:mm")
 	private LocalDateTime doneDate;
 	
 	@PrePersist
